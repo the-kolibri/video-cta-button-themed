@@ -294,12 +294,12 @@ template {
 .Position-Below {
   position: fixed;
   top: 60px;
-  box-shadow: 0 3px 6px #3a3452;
+  box-shadow: 0 3px 6px #6b6b6b;
 }
 .Position-Bottom {
   position: fixed;
   bottom: 0;
-  box-shadow: 0 -3px 6px #3a3452;
+  box-shadow: 0 -3px 6px #6b6b6b;
 }
 
 .LiveCall__ButtonContainer {
@@ -468,7 +468,7 @@ template {
 
 .LiveCallFloating__VideoContainer {
   border-radius: 30px;
-  box-shadow: -4px 4px 10px #332e48;
+  box-shadow: -4px 4px 10px #6b6b6b;
   height: 100%;
   overflow: hidden;
   position: relative;
