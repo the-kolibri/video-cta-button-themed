@@ -503,5 +503,27 @@ template {
     padding: 0px 20px;
   }
 }
+.HeaderEstrellas {
+  background: #000000;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.HeaderEstrellas__Wrapper {
+  margin: auto;
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+}
+.HeaderEstrellas__LogoContainer {
+  width: 50%;
+}
+.HeaderEstrellas__MenuContainer {
+  width: 50%;
+}
+.HeaderEstrellas__Logo {
+  margin: 0;
+}
 
 /*# sourceMappingURL=Main.css.map */
