@@ -1,3 +1,7 @@
+.Display {
+  display: none;
+}
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -194,8 +198,8 @@ template {
 }
 
 .Dummy {
-  background: #4d456d;
-  color: #312b4a;
+  background: #ffffff;
+  color: #000000;
   font-family: Helvetica, sans-serif;
 }
 
@@ -289,13 +293,13 @@ template {
 
 .Position-Below {
   position: fixed;
-  top: 0;
-  box-shadow: 0 3px 6px #3a3452;
+  top: 60px;
+  box-shadow: 0 3px 6px #6b6b6b;
 }
 .Position-Bottom {
   position: fixed;
   bottom: 0;
-  box-shadow: 0 -3px 6px #3a3452;
+  box-shadow: 0 -3px 6px #6b6b6b;
 }
 
 .LiveCall__ButtonContainer {
@@ -464,7 +468,7 @@ template {
 
 .LiveCallFloating__VideoContainer {
   border-radius: 30px;
-  box-shadow: -4px 4px 10px #332e48;
+  box-shadow: -4px 4px 10px #6b6b6b;
   height: 100%;
   overflow: hidden;
   position: relative;
@@ -502,6 +506,35 @@ template {
   .TextContainer {
     padding: 0px 20px;
   }
+}
+.HeaderEstrellas {
+  background: #000000;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+}
+.HeaderEstrellas__Wrapper {
+  margin: auto;
+  max-width: 1140px;
+  width: 100%;
+  display: flex;
+}
+.HeaderEstrellas__LogoContainer {
+  width: 50%;
+}
+.HeaderEstrellas__MenuContainer {
+  width: 50%;
+}
+.HeaderEstrellas__Logo {
+  margin: 0;
+  width: 200px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background: url(../../../images/Estrellas_Logo.png) center 0/150px no-repeat;
 }
 
 /*# sourceMappingURL=Main.css.map */
