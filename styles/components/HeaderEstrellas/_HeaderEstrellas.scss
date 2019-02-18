@@ -1,0 +1,36 @@
+// Header Estrellas File | Raptor v0.0.2
+
+.HeaderEstrellas {
+
+    background: $E-D1;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__Wrapper {
+
+        @include Shaper;
+        width: 100%;
+        display: flex;
+    }
+
+    &__LogoContainer {
+
+        width: 50%;
+
+    }
+
+    &__MenuContainer {
+        width: 50%;
+
+    }
+
+
+    &__Logo {
+
+        margin: 0;
+
+    }
+
+}
