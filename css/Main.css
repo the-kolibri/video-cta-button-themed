@@ -1,0 +1,507 @@
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+.Cover {
+  background: #0D0D0D;
+  color: #E5E5E5;
+  font-family: Helvetica, sans-serif;
+}
+.Cover a {
+  color: #D0D0D0;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+}
+.Cover a:hover {
+  color: rgba(208, 208, 208, 0.5);
+}
+
+.Dummy {
+  background: #4d456d;
+  color: #312b4a;
+  font-family: Helvetica, sans-serif;
+}
+
+.Buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Buttons__Button {
+  align-items: center;
+  background: #292929;
+  border-radius: 50%;
+  display: flex;
+  flex-shrink: 0;
+  height: 100px;
+  justify-content: center;
+  margin: 2%;
+  width: 100px;
+}
+.Buttons a {
+  color: #D0D0D0;
+  font-display: auto;
+  font-family: "Righteous", cursive;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  transition: 0.5s ease-out;
+  will-change: transform;
+}
+.Buttons a:hover {
+  background: #F86363;
+  color: #141414;
+  transform: scale(1.2);
+}
+
+.Headers {
+  text-align: center;
+}
+.Headers__Title {
+  color: #E5E5E5;
+  font-display: auto;
+  font-family: "Righteous", cursive;
+  text-transform: uppercase;
+}
+
+.LiveCall {
+  height: 60px;
+  width: 100%;
+}
+.LiveCall::before {
+  content: "";
+  background: linear-gradient(to right, #2b9081 70%, rgba(43, 144, 129, 0) 100%);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 30%;
+  z-index: 2;
+}
+.LiveCall::after {
+  content: "";
+  background: linear-gradient(to left, #2b9081 70%, rgba(43, 144, 129, 0) 100%);
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30%;
+  z-index: 1;
+}
+.LiveCall__Wrapper {
+  height: 60px;
+  margin: auto;
+  max-width: 1140px;
+  position: relative;
+}
+.LiveCall__Wrapper::before {
+  content: "";
+  background: rgba(43, 144, 129, 0.5);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.LiveCall__ContentContainer {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.Position-Below {
+  position: fixed;
+  top: 0;
+  box-shadow: 0 3px 6px #3a3452;
+}
+.Position-Bottom {
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0 -3px 6px #3a3452;
+}
+
+.LiveCall__ButtonContainer {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+.LiveCall__Button {
+  border-radius: 50px;
+  padding: 6px 40px;
+  text-align: center;
+  border: none;
+  background: #f16767;
+  font-family: Helvetica;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffffff;
+  animation-name: ButtonPulsar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  will-change: transform;
+}
+.LiveCall__Button:focus {
+  outline-color: #f16767;
+}
+.LiveCall__ButtonCopy {
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 10px;
+  padding: 0 0 4px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@keyframes ButtonPulsar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: -2px 2px 2px #1b655a;
+    text-shadow: -1px 1px 2px #8c3333;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.LiveCall__ImageContainer {
+  padding: 0 0 0 10%;
+  width: 50%;
+  box-sizing: border-box;
+}
+.LiveCall__Image {
+  height: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 414px) {
+  .LiveCall__ImageContainer {
+    padding: 2%;
+  }
+}
+.LiveCall__VideoContainer {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.LiveCall__Video {
+  bottom: 0;
+  display: block;
+  height: auto;
+  left: 0;
+  max-width: 100%;
+  min-width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.LiveCallFloating {
+  bottom: 10%;
+  display: block;
+  height: 60px;
+  left: 0;
+  margin: auto;
+  max-width: 90%;
+  position: fixed;
+  right: 0;
+}
+.LiveCallFloating__Wrapper {
+  height: 100%;
+}
+.LiveCallFloating__ContentContainer {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.LiveCallFloating__ButtonContainer {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 40px;
+  width: 50%;
+}
+.LiveCallFloating__Button {
+  border-radius: 50px;
+  padding: 8px 50px;
+  text-align: center;
+  border: none;
+  background: #ff6464;
+  font-family: Helvetica;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffd7d7;
+  animation-name: ButtonFloating;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  will-change: transform;
+}
+.LiveCallFloating__Button:focus {
+  outline-color: #ff6464;
+}
+.LiveCallFloating__ButtonCopy {
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 10px;
+  padding: 5px 8px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 150px;
+}
+
+@keyframes ButtonFloating {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: -3px 3px 3px #37393a;
+    text-shadow: -1px 1px 2px #bf4747;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.LiveCallFloating__ImageContainer {
+  text-align: center;
+  width: 50%;
+}
+.LiveCallFloating__Image {
+  height: 100%;
+  max-width: 100%;
+}
+
+.LiveCallFloating__VideoContainer {
+  border-radius: 30px;
+  box-shadow: -4px 4px 10px #332e48;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.LiveCallFloating__VideoContainer::before {
+  content: "";
+  background: rgba(49, 56, 62, 0.8);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.LiveCallFloating__Video {
+  bottom: 0;
+  display: block;
+  height: auto;
+  left: 0;
+  max-width: 100%;
+  min-width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.TextContainer {
+  font-family: Helvetica;
+  line-height: 22px;
+  margin: auto;
+  max-width: 1140px;
+}
+
+@media (max-width: 1140px) {
+  .TextContainer {
+    padding: 0px 20px;
+  }
+}
+
+/*# sourceMappingURL=Main.css.map */
