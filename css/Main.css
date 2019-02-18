@@ -1,3 +1,7 @@
+.Display {
+  display: none;
+}
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -194,8 +198,8 @@ template {
 }
 
 .Dummy {
-  background: #4d456d;
-  color: #312b4a;
+  background: #ffffff;
+  color: #000000;
   font-family: Helvetica, sans-serif;
 }
 
@@ -289,7 +293,7 @@ template {
 
 .Position-Below {
   position: fixed;
-  top: 0;
+  top: 60px;
   box-shadow: 0 3px 6px #3a3452;
 }
 .Position-Bottom {
@@ -509,10 +513,12 @@ template {
   width: 100%;
   display: flex;
   justify-content: center;
+  position: fixed;
+  top: 0;
 }
 .HeaderEstrellas__Wrapper {
   margin: auto;
-  max-width: 1440px;
+  max-width: 1140px;
   width: 100%;
   display: flex;
 }
@@ -524,6 +530,11 @@ template {
 }
 .HeaderEstrellas__Logo {
   margin: 0;
+  width: 200px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background: url(../../../images/Estrellas_Logo.png) center 0/150px no-repeat;
 }
 
 /*# sourceMappingURL=Main.css.map */
