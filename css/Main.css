@@ -534,7 +534,7 @@ template {
   height: 60px;
   display: flex;
   align-items: center;
-  background: url(../../../images/Estrellas_Logo.png) center 0/150px no-repeat;
+  background: url("./../images/Estrellas_Logo.png") center 0/150px no-repeat;
 }
 
 /*# sourceMappingURL=Main.css.map */
