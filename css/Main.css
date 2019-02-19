@@ -531,7 +531,7 @@ template {
 .LiveCallFloating {
   bottom: 10%;
   display: block;
-  height: 58px;
+  height: 60px;
   left: 0;
   margin: auto;
   max-width: 90%;
@@ -624,16 +624,9 @@ template {
   z-index: 1;
 }
 .LiveCallFloating__Video {
-  bottom: 0;
-  display: block;
-  height: auto;
-  left: 0;
-  max-width: 100%;
-  min-width: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
+  height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .TextContainer {
