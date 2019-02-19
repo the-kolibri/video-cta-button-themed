@@ -386,6 +386,148 @@ template {
   width: 100%;
 }
 
+.LiveCallBottom {
+  height: 60px;
+  width: 100%;
+}
+.LiveCallBottom::before {
+  content: "";
+  background: linear-gradient(to right, #ad4c4c 70%, rgba(173, 76, 76, 0) 100%);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 30%;
+  z-index: 2;
+}
+.LiveCallBottom::after {
+  content: "";
+  background: linear-gradient(to left, #ad4c4c 70%, rgba(173, 76, 76, 0) 100%);
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30%;
+  z-index: 1;
+}
+.LiveCallBottom__Wrapper {
+  height: 60px;
+  margin: auto;
+  max-width: 1140px;
+  position: relative;
+}
+.LiveCallBottom__Wrapper::before {
+  content: "";
+  background: rgba(173, 76, 76, 0.5);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.LiveCallBottom__ContentContainer {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.Position-Below {
+  position: fixed;
+  top: 60px;
+  box-shadow: 0 3px 6px #6b6b6b;
+}
+.Position-Bottom {
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0 -3px 6px #6b6b6b;
+}
+
+.LiveCallBottom__ButtonContainer {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+.LiveCallBottom__Button {
+  border-radius: 50px;
+  padding: 6px 40px;
+  text-align: center;
+  border: none;
+  background: #ffe182;
+  font-family: Helvetica;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #8a1414;
+  animation-name: ButtonPulsar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  will-change: transform;
+}
+.LiveCallBottom__Button:focus {
+  outline-color: #ffe182;
+}
+.LiveCallBottom__ButtonCopy {
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 10px;
+  padding: 0 0 4px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@keyframes ButtonPulsar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: -2px 2px 2px #3c1b1b;
+    text-shadow: -1px 1px 2px #3c1b1b;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.LiveCallBottom__ImageContainer {
+  padding: 0 0 0 10%;
+  width: 50%;
+  box-sizing: border-box;
+}
+.LiveCallBottom__Image {
+  height: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 414px) {
+  .LiveCallBottom__ImageContainer {
+    padding: 2%;
+  }
+}
+.LiveCallBottom__VideoContainer {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.LiveCallBottom__Video {
+  bottom: 0;
+  display: block;
+  height: auto;
+  left: 0;
+  max-width: 100%;
+  min-width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
 .LiveCallFloating {
   bottom: 10%;
   display: block;
