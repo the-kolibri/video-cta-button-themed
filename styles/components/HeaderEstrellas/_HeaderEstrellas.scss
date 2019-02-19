@@ -24,7 +24,23 @@
     }
 
     &__MenuContainer {
+
         width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 5%;
+        box-sizing: border-box;
+
+    }
+
+    &__Menu {
+
+        background: url(./../images/Menu_Icon.png) center/40px;
+        width: 40px;
+        height: 40px;
+        border: solid 1px $E-D2;
+        border-radius: 6px;
 
     }
 
